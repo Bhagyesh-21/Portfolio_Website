@@ -1,0 +1,141 @@
+*, *:before, *:after {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* body {
+   background: linear-gradient(rgb(121, 50, 50),rgb(124, 103, 103));
+   display: flex;
+   height: 100vh;
+   --on: #88e661;
+   --off: #f0f0f0;
+   --transDur: 0.6s;
+  } */
+  input {
+    position: fixed;
+    transform: translateX(-100%);
+  }
+  .toy-toggle {
+   background:
+    radial-gradient(at top left,#fff 10%,#fff0 20%),
+    radial-gradient(at top right,#fff 20%,#e4e4e4 35%);
+  border-radius: 2em;
+  box-shadow:
+    0 0 0.25em #0002,
+    0 3em 1.5em 0.5em #0002;
+  cursor: pointer;
+  /* display: block; */
+  font-size: 12px;
+  position: absolute;
+  top: 15px;
+  left: 45px; 
+  margin: auto;
+  width: 0em;
+  height: 4em;
+
+  }
+  .toy-toggle div {
+  position: absolute;
+  }
+  .toy-toggle > div {
+  top: 50%;
+  left: 50%;
+  }
+  .toy-toggle > div:not(.handle) {
+  transform: translate(-50%,-50%);
+  }
+  .border1 {
+  background: #8a8989;
+  border-radius: 5.5em;
+  box-shadow: 0 0 0.2em 0.1em #b59f9f;
+  width: 6.33em;   /* 10    6.333   6 */
+  height: 3.66em; /* 6     3.666   4   */
+  }
+  .border2 {
+  background: linear-gradient(0deg,#fff 33%,#ccc 45%);
+  border-radius: 4.75em;
+  box-shadow: 0 0 0.2em 0.3em #f0f0f0 inset;
+  width: 5.5em;      /*  8	  5.5	  5.5 */
+  height: 3.16em;    /*  4.5   3.16    3 */
+  }
+  .border3, .handle {
+  background: linear-gradient(90deg, var(--on) 50%, var(--off) 0);
+  }
+  .border3 {
+  background-position: 75% 0;
+  background-size: 200% 100%;
+  border-radius: 4.25em;
+  box-shadow:
+    0 0 0.1em 0.1em #ddd inset,
+    0 1.5em 1.5em 1em #0004 inset,
+    0 0 0 4.25em #0002 inset;
+  width: 5.16em;     /*  8     5.16    5 */
+  height: 2.83em;    /*  3.5   2.83    3 */
+  transition: background-position var(--transDur) ease-in-out;
+  }
+  .handle {
+  border-radius: 50%;
+  box-shadow: 0 0 0.5em 0 #0007;
+  width: 2.83em;    /*  4     2.83    3  */
+  height: 2.83em;   /*  4     2.83    3  */
+  transform: translate(-90%,-50%);
+  transition: transform var(--transDur) ease-in-out;
+  z-index: 0;
+  }
+  .handle:before {
+  background:
+    radial-gradient(2em 1.5em at 50% 35%,#fff6 15%,#fff0),
+    radial-gradient(1.5em 2.5em at 75% 40%,#fff6 15%,#fff0),
+    radial-gradient(100% 100% at 50% 33%,#0000 25%,#0003 50%);
+  border-radius: 50%;
+  box-shadow: 0 0 0.3em 0.1em #0003 inset;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  }
+  .handle-off, .handle-on {
+  width: 50%;
+  height: 100%;
+  transition: transform calc(var(--transDur)/2);
+  z-index: 2;
+  }
+  .handle-off {
+  background: var(--off);
+  border-radius: 100% 0 0 100% / 50% 50% 50% 50%;
+  right: 50%;
+  transform-origin: 100% 50%;
+  transition-delay: calc(var(--transDur)/2);
+  transition-timing-function: ease-out;
+  }
+  .handle-on {
+  background: var(--on);
+  border-radius: 0 100% 100% 0 / 50% 50% 50% 50%;
+  left: 50%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-timing-function: ease-in;
+  }
+  
+  /* On */
+  input:checked + .toy-toggle .border3 {
+  background-position: 25% 0;
+  }
+  input:checked + .toy-toggle .handle {
+  transform: translate(-10%,-50%);
+  }
+  input:checked + .toy-toggle .handle-off {
+  transform: scaleX(0);
+  transition-delay: 2s;
+  transition-timing-function: ease-in;
+  }
+  input:checked + .toy-toggle .handle-on {
+  transform: scaleX(1);
+  transition-delay: calc(var(--transDur)/2);
+  transition-timing-function: ease-out;
+  }
