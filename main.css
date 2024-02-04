@@ -58,7 +58,7 @@ img{
 
 /*Start reusable*/
 .container{
-    width: 90%;
+    width: 100%;
     max-width: 120rem;
     height: 100%;
     margin: 0 auto;
@@ -147,7 +147,7 @@ header{
 }
 
 .top-nav{
-    width: 100%;
+    width: 98%;
     height: 70vh;
     position: fixed;
     top: -100vh;
@@ -165,7 +165,7 @@ header{
     content: "";
     display: block;
     height: 2px;
-    left: 50%;
+    /* left: 50%; */
     position: absolute;
     background: red;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -182,12 +182,12 @@ header{
 /*} */
 
 
-.top-nav:hover:after { 
+/* .top-nav:hover:after { 
     width: 100%; 
-    left: 0; 
+    left: 0;  */
     /* left: 50%; */
     /* text-decoration: underline; */
-  } 
+  /* }  */
 
 .nav-list{
     list-style: none;
@@ -200,7 +200,7 @@ header{
 }
 
 li{
-    margin: 2rem;
+    margin: 0 2rem;
 }
 
 
@@ -209,7 +209,7 @@ li{
     font-size: 5rem;
     padding: 1rem;
     color: #eee;
-   
+    text-decoration: none; 
 }
 
 .nav-link:hover,
@@ -388,24 +388,24 @@ li{
 .about .container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-.about-heading span{
+/* .about-heading span{
     color: #ff0000;
-}
+} */
 
 .about-heading{
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
     line-height: 0;
     margin-bottom: 6rem;
     --fa-style-family-classic: "Font Awesome 6 Free"; 
     /* Use the classic style for this icon */
     font-family: var(--fa-style-family-classic);
-
-
 }
+
+
 .about-heading h1{
     text-align: center;
     font-size: 10rem;
@@ -461,9 +461,13 @@ li{
 } */
 
 .profile-img{
-    flex: .8;
-    margin-right: 5rem;
-
+    flex: 1.2;
+    margin-right: 10rem;
+    border-radius: 28px;
+    height: 300px;
+    top: 20px;
+    /* right: -90px; */
+    bottom:  10;
 }
 
 .about-details{
@@ -472,8 +476,8 @@ li{
 
 .about p{
     /* color: #ffffff; */
-
-    opacity: .8;
+    text-align: justify;
+    opacity: .8;    
     --fa-style-family-classic: "Font Awesome 6 Free"; 
     /* Use the classic style for this icon */
     font-family: var(--fa-style-family-classic); 
@@ -679,7 +683,7 @@ li{
     width: 5rem;
     height: 5rem;
     border: 1px white solid;
-    background-color: #000000de;
+    /* background-color: #000000de; */
     top: -2.5rem;
     right: 5rem;
     border-radius: 100%;
@@ -722,16 +726,6 @@ li{
 		transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(230, 226, 226, 0.7);
 	}
-
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
-
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
 }
 
 @keyframes move1{
@@ -751,23 +745,7 @@ li{
 	}
   
 }
-@keyframes move2{
-    100% {
-		transform: scale(1.15);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
 
-	70% {
-		transform: scale(1);
-		box-shadow: 10 0 0 0px rgba(0, 0, 0, 0);
-	}
-
-	0% {
-		transform: scale(1.15);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
-  
-}
 @keyframes pulse{
     0%{
         box-shadow: 0 0 0 0 rgba(253,87,191,.99);
@@ -828,10 +806,19 @@ li{
 
     .profile-img{
         flex: 1;
+        /* display: inline-block; */
+    }
+
+    .about-heading{
+        /* display: flex; */
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
     }
 
     .about-heading h1{
         font-size: 8rem;
+
     }
 
     .section-heading h1{
@@ -841,7 +828,7 @@ li{
     .about-details h1{
         font-size: 2rem;
         font-weight: 400;
-        color: rgb(240, 4, 4);
+        /* color: rgb(240, 4, 4); */
     }
    
     .about-details .nav-list{
@@ -1016,10 +1003,10 @@ li{
         top: 110rem;
     }
 
-    .profile-img{
-        top: -20%;
+    /* .profile-img{
+        top: 0%;
         margin: 0 0 7rem 0;
-    }
+    } */
     
     .skills-img{
         top: 10%;
