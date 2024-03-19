@@ -1,0 +1,44 @@
+ /* Flex container for horizontal layout */
+ .education-container {
+    display: flex;
+    justify-content: space-between; /* Distribute boxes evenly */
+
+}
+
+/* Basic styling for the boxes */
+.education-box {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Equal width for all boxes */
+    margin: 10px;
+    transition: 0.3s;
+}
+
+/* Additional styling for the title */
+.education-box h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Styling for the content */
+.education-box p {
+    font-size: 1.8rem;
+    opacity:  0.8;
+    background-color: #63d0ac;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    fill-opacity: inherit;
+}
+
+.education-box:hover {
+    /* box-shadow: 0 8px 0px 0 rgba(0, 238, 255, 0.2); */
+    transform: translateZ(8px) scale(1.1);
+    transition: all 0.4s ease-in-out; 
+    
+    /* transform:skewX() */
+  }

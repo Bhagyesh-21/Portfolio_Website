@@ -1,0 +1,217 @@
+  /* DARKMODE CODE STARTS HERE */
+
+body  {
+    padding: 25px;
+    background-color: rgb(236, 236, 236);
+    color: black;
+    font-size: 25px;
+    transition: background-color 0.5s ease-in-out, color 0.6s ease-out;
+  }
+  body.dark-mode  {
+    background-color: rgb(46, 45, 45);
+    color: rgb(255, 255, 255);
+  }
+
+    /* DARKMODE CODE END HERE */
+
+    
+
+  .toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 17px; 
+  } */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc;
+    transition: .4s;
+    border-radius: 34px; /* Half of the height */
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  
+
+  input:checked + .slider {
+    background-color: #ccc;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  label{
+    position: absolute;
+    display: inline-block;
+    top: 43px;
+    left: 10px; 
+    border-radius: 8px;
+    cursor: pointer;
+    -webkit-touch-callout: none; 
+    font-size: 14px;
+  } 
+  */ 
+
+  .container {
+    /* background-color: #0f0f0f; */
+    /* color: rgb(14, 14, 14); */
+    padding: 50px;
+    text-align: left;
+
+  }
+
+  .container {
+    text-align: left;
+  }
+
+.landing-text span {
+    color: #ff004f;
+}
+
+span.dark-mode{
+  background-color: black;
+  color: white;
+}
+
+h3.dark-mode{
+  background-color: black;
+  color: rgb(211, 244, 104);
+}
+  
+  
+.heart {
+    color: red;
+}
+
+.Title-tab{
+  background-color: black;
+  color: white;
+}
+
+.titles{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position:relative;
+    padding: 10px;
+}
+  
+hr{
+  width: 100%;
+  text-align: left;
+  height: 0.1px;
+  margin: 25px; 
+  animation-delay: -0.2s;
+  opacity: .3;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Define the animation */
+@keyframes slide {
+  from {
+    width: 0%;
+    left: 0%;
+  }
+  to {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+/* Apply the animation to the hr element */
+.hr{
+  position: relative;
+  /* border: none; */
+  height: 2px; 
+}
+
+/* Define the animation */
+
+
+/* Apply the animation to the hr element */
+hr {
+  position: relative;
+  /* border: none; */
+  height: 2px;
+  width: 100%;
+  display: block;
+  background: #9c9c9c;
+  /* Set the animation duration, timing function, and direction */
+  animation: move 5s linear  finite;
+  /* Set the transition duration and property for the scroll effect */
+  transition: all 0.5s;
+}
+
+Change the animation-play-state on scroll
+.container {
+  height: 200vh;
+}
+
+.container:target hr {
+  animation-play-state: paused;
+}
+
+
+
+
+.skills {
+  width: 40%;
+}
+.education {
+  width: 100%;
+  align-content:end;
+}
+
+.education span{
+  font-size: 15px;
+}
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.qualification {
+  margin-bottom: 20px;
+}
+.qualification h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.qualification p {
+  margin: 0;
+}
