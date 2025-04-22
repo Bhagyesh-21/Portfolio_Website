@@ -16,6 +16,7 @@ html{
     font-size: 10px;
     font-family: 'Gotham Medium';
     color: #c5c5c5;
+    background-color: white;
 }
 
 body{
@@ -132,8 +133,7 @@ img{
     margin-top: 1rem;
     font-size: 3rem;
     font-weight: 300;
-    color: #61d8e2;
-    /* color: #ffffff; */
+    color: #1abc9c;
     }
 
 
@@ -506,15 +506,6 @@ li{
 }
 
 
-.fa-twitter-square:hover{
-    color: #ffffff ;
-    transform: translateY(-5px);
-}
-
-.fa-behance-square:hover{
-    color: #ffffff ;
-}
-
 .skills-img{
     position: absolute;
     width: 15%;
@@ -618,6 +609,31 @@ li{
 
 }
 
+@media screen and (max-width: 768px) {
+    .portfolio-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-img {
+        width: 100%;
+        margin: 10px 0; /* Align images properly */
+    }
+    .portfolio-description {
+        text-align: center; /* Center text for smaller screens */
+    }
+}
+
+
+/* cerificates*/
+.certificate-link {
+    color: #f1f1f1; /* Adjust the color to your preference */
+    text-decoration: underline; /* Removes underline, if desired */
+}
+
+.certificate-link:hover {
+    color: #0056b3; /* Change color on hover for interactivity */
+    text-decoration: underline; /* Optional hover effect */
+}
 
 
 /*End services*/
@@ -1190,6 +1206,43 @@ li{
 
 }
 
+@media screen and (max-width: 768px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center; /* Center align content */
+    }
+    .social-links {
+        justify-content: center; /* Align icons to the center */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-nav {
+        height: auto;
+        overflow: hidden; /* Prevent overflow issues */
+    }
+    .nav-list {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav-link {
+        font-size: 3rem; /* Adjust for readability */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /*End media queries*/
 
