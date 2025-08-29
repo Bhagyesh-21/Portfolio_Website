@@ -10,5 +10,10 @@ function toggleDarkMode() {
   }
 
 
-
-  
+  function jumpToTime(seconds) {
+    const video = document.getElementById("turfVideo");
+    if (video) {
+      video.currentTime = seconds;
+      video.play();
+    }
+  }

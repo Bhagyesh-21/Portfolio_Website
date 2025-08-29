@@ -215,3 +215,112 @@ li {
 .qualification p {
   margin: 0;
 }
+
+.portfolio-img {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.caption {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1px;
+}
+
+.description {
+  font-size: 1.8rem;
+  color: #555;
+  line-height: 1.6;
+  background-color: #fff;
+  padding: 15px;
+  border-left: 4px solid #0078D7;
+  border-radius: 6px;
+}
+
+#sub-headings{
+    font-weight: bold;
+  font-size: 1.2em;
+  color: #000000;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+
+.sub-heading {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #000000;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.portfolio-description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.portfolio-img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.has-margin-right {
+  margin-right: 20px;
+}
+
+.has-margin-left {
+  margin-left: 20px;
+}
+
+.caption {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta:hover {
+  text-decoration: underline;
+}

@@ -16,7 +16,7 @@ html{
     font-size: 10px;
     font-family: 'Gotham Medium';
     color: #c5c5c5;
-    background-color: white;
+    /* background-color: white; */
 }
 
 body{
@@ -559,7 +559,7 @@ li{
 .portfolio-description{
     flex: 1;
     font-size: 18px;
-    
+    margin-left: 25px
 }
 
 .portfolio-description h1{
@@ -592,7 +592,7 @@ li{
     font-size: 22px;
     line-height: 1.5;
     opacity: 0.7;
-    
+    text-align: justify;
 }
 
 .portfolio-description .cta{
